@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0 , minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hamidAzimi.net</title>
+    <link rel="icon" href="assets/images/kzp.jpg">
+    <!-- jquery -->
+    <script type="text/javascript" src="../jquery/jquery-min.js"></script>
+    <!-- bootstrap 4.4.1 stylesheet -->
+    <link rel="stylesheet" href="../bootstrap4.4.1/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../bootstrap4.4.1/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/fresco.css">
+    <link rel="stylesheet" href="assets/css/jquery.simpleTicker.css">
+    <link rel="stylesheet" href="assets/plugin/slider/css/zpSlider.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons/style.css">
+    <!-- bootstrap 4.4.1 javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../bootstrap4.4.1/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.simpleTicker.js"></script>
+    <script type="text/javascript" src="assets/plugin/slider/jq/jquery.mobile-events.min.js"></script>
+    <script type="text/javascript" src="assets/plugin/slider/zpSlider.js"></script>
+    <script type="text/javascript" src="assets/js/custom-js.js"></script>
+</head>
+<body onload="showPage()">
+    <div id="bg-loader">
+        <div id="loader">
+          <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+<div id="wrapper" >
+<div class="container-fluid d-none d-lg-block">
+  <div class="row">
+    <div class="col-12">
+      <div class="helloAlert hide">
+        <span class="icon-exclamation-circle"></span>
+        <span class="msg">سلام دوست من خوش آمدید</span>
+        <span class="close-btn">
+          <span class="icon-times"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="progWrap">
+  <div class="progress pgs">
+    <div class="progress-bar bg-primary" id="myBar"></div>
+  </div>
+</div>
+<div class="sideMenu d-block d-lg-none">
+  <nav class="sideBar">
+    <div class="sideBarText">hamidAzimi.net</div>
+    <img src="assets/images/kzp.jpg" alt="kzp.jpg" class="sideMenuImage" />
+    <ul class="main">
+      <li><a href="#">انجمن</a></li>
+      <li>
+        <a href="#" class="hasBtn1">
+          میان بر
+          <span class="icon-caret-down first"></span>
+        </a>
+        <ul  class="zpHas-sub1">
+          <li><a href="#">صفحات</a></li>
+          <li><a href="#">بانک کد</a></li>
+        </ul>
+      </li>
+      <li >
+        <a href="#" class="hasBtn2">
+          لیست دوره ها
+          <span class="icon-caret-down second"></span>
+        </a>
+        <ul class="zpHas-sub2">
+          <li><a href="#">متخصص پایتون</a></li>
+          <li>
+            <a href="#" class="hasBtn3">
+              طراحی وب
+              <span class="icon-caret-down third"></span>
+            </a>
+            <ul class="zpHas-sub3">
+              <li><a href="#">سی اس اس</a></li>
+              <li><a href="#">اچ تی ام ال</a></li>
+              <li><a href="#">بوت استرپ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">متخصص جاوا </a></li>
+          <li><a href="#">متخصص php</a></li>
+          <li><a href="#">متخصص js</a></li>
+        </ul>
+      </li>
+      <li><a href="#">ورود|ثبت نام</a></li>
+      <li><a href="#">درباره ما</a></li>
+      <li><a href="#" class="noBorder">تماس با ما</a></li>
+    </ul>
+  </nav>
+  <div class="btn-toggle">
+    <span class="icon-caret-left"></span>
+  </div>
+</div>
+<div class="wrapper">
+    <!-- top header section -->
+    <div class="container-fluid" id="custom-container-fluid">
+        <div class="cover-header"></div>
+        <!-- main menu -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top text-right">
+            <a href="#" class="navbar-brand font-italic">hamidAzimi.net</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavBar" name="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-none d-xl-block">
+                        <a href="#" class="nav-link dropdown-toggle custom-icon-nav" data-toggle="dropdown">
+                            دوره های آموزشی
+                            <span class="icon-book" style="vertical-align:-2px;color:#fffd84"></span>
+                        </a>
+                        <div class="dropdown-menu" id="custom-main-dropdown-menu">
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-12 col-md-4" id="custom-vertical-border">
+                                        <div class="alert alert-light bg-dark text-white text-center">
+                                            لیست همه ی دوره ها
+                                        </div>
+                                        <div class="d-flex w-100" id="custom-nav-title">
+                                            <span class="icon-clock-o"></span>
+                                            <p>جدیدترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4" id="custom-vertical-border">
+                                        <div class="alert alert-light bg-dark text-white text-center">
+                                            دوره های حضوری
+                                        </div>
+                                        <div class="d-flex w-100" id="custom-nav-title">
+                                            <span class=" icon-money"></span>
+                                            <p> پر فروش ترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="alert alert-light bg-dark text-white text-center">
+                                            دور های غیر حضوری
+                                        </div>
+                                        <div class="d-flex w-100 " id="custom-nav-title">
+                                            <span class="icon-clock-o"></span>
+                                            <p> محبوب ترین دوره های آموزشی</p>
+                                        </div>
+                                        <ul class="list-group px-0" id="sub-menu-listgroup">
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_backspace"></span>
+                                                <a href="#" class="dropdown-item">python</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">javaScript</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c++</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">c#</a>
+                                            </li>
+                                            <li class="list-group-item d-flex ">
+                                                <span class="icon-keyboard_return"></span>
+                                                <a href="#" class="dropdown-item">java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item custom-icon-nav" >
+                        <a href="#" class="nav-link">
+                            درباره ما
+                            <span class="icon-info_outline" style="color:#10ddff"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item custom-icon-nav" onclick="smoothScrollTo(1000)">
+                        <a href="#" class="nav-link">
+                            تماس با ما
+                            <span class="icon-phone" style="color:greenyellow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- login and sign in buttons -->
+                <div class="" style="margin-top:-5px">
+                    <button class="btn btn-dark .active" id="logIn-btn" data-toggle="modal" data-target="#myModal">
+                        ورود
+                        <span class="icon-person_pin" style="vertical-align:-4px;color:#7affe0"></span>
+                    </button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content text-center">
+                                <div class="modal-header bg-dark text-white">
+                                    <h6 class="modal-title d-flex w-100">ورود</h6>
+                                    <button class="close" data-dismiss="modal">
+                                        <span class="text-white">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+                                    <form class="" action="#" method="post">
+                                        <div class="input-group">
+                                            <div class="input-group-text bg-light text-dark">
+                                                ایمیل
+                                            </div>
+                                            <input type="email" class="form-control"
+                                                   placeholder="ایمیل آدرس خود را واارد کنید">
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <div class="input-group-text bg-light text-dark">
+                                                رمز عبور
+                                            </div>
+                                            <input type="password" class="form-control"
+                                                   placeholder="رمز عبور خود را وارد کنید">
+                                        </div>
+                                        <span> کد را در کادر زیر وارد کنید :</span>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="مثال: 54685">
+                                            <img src="assets/images/index.png">
+                                            <div class="input-group-text bg-light text-white">
+                                                <img src="assets/images/refresh-icon.png" width="25px" height="25px">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn" name="button"
+                                            style="background:#4d565e;color:#fff">ورود به سایت
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-white" style="vertical-align:-2px">|</span>
+                    <button class="btn btn-dark mt-1" id="signIn-btn" data-toggle="modal" data-target="#myModal2">
+                        ثبت نام
+                        <span class="icon-person_add" style="vertical-align:-2px;color:gold"></span>
+                    </button>
+                    <div class="modal fade" id="myModal2">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content text-center">
+                                <div class="modal-header bg-dark text-white">
+                                    <h6 class="modal-title d-flex w-100">ثبت نام</h6>
+                                    <button class="close" data-dismiss="modal">
+                                        <span class="text-white">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+                                    <form class="" action="#" method="post">
+                                        <div class="input-group">
+                                            <div class="input-group-text bg-light text-dark">
+                                                نام کاربری
+                                            </div>
+                                            <input type="text" class="form-control"
+                                                   placeholder="نام  کاربری دلخوا خود را وارد کنید">
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <div class="input-group-text bg-light text-dark">
+                                                ایمیل
+                                            </div>
+                                            <input type="email" class="form-control"
+                                                   placeholder="ایمیل آدرس خود را واارد کنید">
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <div class="input-group-text bg-light text-dark">
+                                                رمز عبور
+                                            </div>
+                                            <input type="password" class="form-control"
+                                                   placeholder="رمز عبور خود را وارد کنید">
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="input-group-text bg-light text-dark">
+                                                تکرار رمز عبور
+                                            </div>
+                                            <input type="password" class="form-control"
+                                                   placeholder="رمز عبور را دوباره تکرار کنبد">
+                                        </div>
+                                        <span> کد را در کادر زیر وارد کنید :</span>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="مثال: 54685">
+                                            <img src="assets/images/index.png">
+                                            <div class="input-group-text bg-light text-white">
+                                                <img src="assets/images/refresh-icon.png" width="25px" height="25px" alt="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success" name="button"
+                                            style="background:#4d565e;color:#fff">ثبت نام
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- user settings -->
+                <div class="mr-auto ">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle mt-2 " data-toggle="dropdown">
+                                <span>تنظیمات</span>
+                                <span class="icon-settings"></span>
+                            </a>
+                            <div class="dropdown-menu border-right-0 border-left-0  " id="custom-dropdown-menu">
+                                <a href="#" class="dropdown-item custom-icon-nav">
+                                    <span class="icon-comment"></span>
+                                    <span>نظرات</span>
+                                </a>
+                                <a href="#" class="dropdown-item custom-icon-nav">
+                                    <span class="icon-border_color"></span>
+                                    <span>ارسال نظرات</span>
+                                </a>
+                                <a href="#" class="dropdown-item custom-icon-nav">
+                                    <span class="icon-user-circle-o" style="vertical-align:-4px"></span>
+                                    <span>پروفایل کاربری</span>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item custom-icon-nav">
+                                    <span class="icon-dashboard2" style="vertical-align:-4px"></span>
+                                    <span>پنل مدیریت</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/images/kzp.jpg" class="menu-avatar">
+                                <span class="mr-2 pf-icon">پروفایل</span>
+                                <span class="icon-face"></span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">پروفایل شما</a>
+                                <a href="#" class="dropdown-item">دوره های شما</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="#" class="dropdown-item">ارسال تیکت</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+        <div class="container-fluid mt-lg-5 mt-xl-3" id="custom-top-menu-container">
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <div class="top-title">
+                        <div id="demo" class="ticker">
+                            <ul class=" text-center text-sm-right">
+                                <li>مسابقات طراحی وب!!</li>
+                                <li>آموزش 0 تا 100 طراحی وب</li>
+                                <li>آموزش زبان هاس سمت سرور</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $.simpleTicker($("#demo"), {
+                speed: 1000,
+                delay: 3000,
+                easing: 'swing',
+                effectType: 'fade'
+            });
+        </script>
+        <!-- header section -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8 text-center mt-5">
+                    <p class="header-section text-white  d-none d-md-block">
+                        همگام با ما برای ورود به عرصه توسعه وب
+                        <br><br>
+                        hamidAzimi.net
+                        برگزار کننده دوره های تخصصی مبتنی بر طراحی و برنامه نویسی وب
+                    </p>
+                    <form class="fm2" action="index.html" method="post">
+                        <div class="input-group-prepend ">
+                            <input type="text" class="form-control rounded-right" placeholder="دنبال چی می گردی؟!.."
+                                   style="border-radius:0;border:none">
+                            <div class="input-group-text bg-info text-white "
+                                 style="border-bottom-right-radius:2px;border-top-right-radius:2px;border:none;cursor:pointer">
+                                بگرد
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8  col-sm-12 col-md-9 col-lg-7 col-xl-6 text-center mt-5 mr-5" id="meta-section">
+                    <div class="ml-4 float-right">
+                        <span class="icon-school icons-ma"></span>
+                        <p class="text-white txt-ma1">500نفر دانشجو</p>
+                    </div>
+                    <div class="ml-4 float-right">
+                        <span class="icon-library_books icons-ma"></span>
+                        <p class="text-white txt-ma2">1200 مقاله</p>
+                    </div>
+                    <div class="ml-4 float-right">
+                        <span class="icon-access_alarms icons-ma"></span>
+                        <p class="text-white txt-ma3"> 1560 دقیقه آموزش</p>
+                    </div>
+                    <div class="ml-4 float-right">
+                        <span class="icon-supervisor_account icons-ma"></span>
+                        <p class="text-white txt-ma4"> 20 دوره آموزشی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-4 order-sm-last mb-3">
+                <div class="card bg-warning text-white">
+                    <div class="card-header text-right px-md-5 py-md-5" style="padding:10px !important">
+                        اطلاعیه ها
+                        <span class="icon-info_outline info2"></span>
+                    </div>
+                    <div class="card-body shadow-lg  px-md-4">
+                        <ul class="list-group px-0 py-0 text-dark text-right info-section ">
+                            <li class="list-group-item mb-1 ">
+                                <a href="#" class="text-dark">
+                                  ثبت نام دوره متخصصص پایتون
+                                </a>
+                                <span class="float-left rounded px-1 py-1  text-white d-block d-md-none d-xl-block ">تاریخ: 19-12-98</span>
+                            </li>
+                            <li class="list-group-item mb-1">
+                                <a href="#" class="text-dark">
+                                  ثبت نام دوره متخصص پی اچ پی
+                                </a>
+                                <span class="float-left rounded px-1 py-1 text-white d-block d-md-none d-xl-block">تاریخ: 19-12-98</span>
+                            </li>
+                            <li class="list-group-item mb-1">
+                                <a href="#" class="text-dark">
+                                  ثبت نام دوره متخصص وب
+                                </a>
+                                <span class="float-left rounded px-1 py-1 text-white d-block d-md-none d-xl-block">تاریخ: 19-12-98</span>
+                            </li>
+                            <li class="list-group-item mb-1">
+                                <a href="#" class="text-dark">
+                                 ثبت نام دوره متخصص جاوا
+                                </a>
+                                <span class="float-left rounded px-1 py-1 text-white d-block d-md-none d-xl-block">تاریخ: 19-12-98</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-8 mb-2  order-last order-sm-start  ">
+                <div class="zpSlider rounded shadow-lg" id="slider1">
+                  <ul>
+                    <li title="user experience">
+                      <a href="#"><img src="assets/images/slider1.jpg" alt="a" ></a>
+                    </li>
+                    <li title="object oriented">
+                      <a href="#"><img src="assets/images/slider2.jpg" alt="b" ></a>
+                    </li>
+                    <li title="متخصص لینوکس">
+                      <a href="#"><img src="assets/images/slider3.jpg" alt="b" ></a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      $('#slider1').zpSlider()
+    </script>
+
+    <!-- main content section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="container rounded-top mt-3" style="background:#2ecc71">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="content-section-title text-white">
+                          <p class="p-2 m-0 text-center" style="font-size:20px">عناوین آموزشی</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container p-2 custom-container-main-content rounded-bottom">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="btn-group float-right mb-1 pl-2">
+                          <button type="button" class="btn btn-sm btn-outline-info dropdown-toggle" data-toggle="dropdown">همه
+                              مطالب
+                          </button>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">گالری</a>
+                              <a href="#" class="dropdown-item">مقالات آموزشی</a>
+                              <a href="#" class="dropdown-item">دوره های آموزشی</a>
+                              <a href="#" class="dropdown-item">بانک کد</a>
+                          </div>
+                      </div>
+                      <div class="btn-group float-right mb-1 pl-2">
+                          <button type="button" class="btn btn-sm btn-outline-info dropdown-toggle" data-toggle="dropdown">موضوعات
+                          </button>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">گالری</a>
+                              <a href="#" class="dropdown-item">مقالات آموزشی</a>
+                              <a href="#" class="dropdown-item">دوره های آموزشی</a>
+                              <a href="#" class="dropdown-item">بانک کد</a>
+                          </div>
+                      </div>
+                      <div class="btn-group float-left mb-1 pl-2">
+                          <button type="button" class="btn btn-sm btn-outline-info dropdown-toggle" data-toggle="dropdown">
+                            فیلتر
+                          </button>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">گالری</a>
+                              <a href="#" class="dropdown-item">مقالات آموزشی</a>
+                              <a href="#" class="dropdown-item">دوره های آموزشی</a>
+                              <a href="#" class="dropdown-item">بانک کد</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/19.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item  d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/18.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/20.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/11.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/12.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/13.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/17.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 mb-2">
+                      <div class="card position-relative shadow-sm" id="custom-content-card">
+                          <span class="new-post-badge rounded position-absolute badge badge-danger">new</span>
+                          <span class="post-type rounded position-absolute">مقاله</span>
+                          <img src="assets/images/16.png" class="card-img-top">
+                          <div class="card-body">
+                              <a href="#" class="card-title" style="height: 100px">
+                                  آموزش ویدئویی : طراحی صفحه بندی مطالب در php –
+                                  قسمت سوم (آخر)‏
+                              </a>
+                              <span class="float-left mt-2">18 اسفند 1398</span>
+                          </div>
+                          <div class="card-footer custom-card-footer ">
+                              <ul class="list-group-inline px-0 py-0 mx-0 my-0 text-center" id="post-meta">
+                                  <li class="list-inline-item text-danger">
+                                      <span class=" icon-files-o"></span>
+                                      رایگان
+                                  </li>
+                                  <li class="list-inline-item d-md-none d-xl-inline-block">
+                                      21
+                                      <span class="icon-commenting"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      45
+                                      <span class="icon-visibility"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-up"></span>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      16
+                                      <span class="icon-thumbs-down"></span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <a href="#" class="btn btn-outline-success">همه مطالب آموزشی ...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- feature section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="panel mt-1 rounded shadow-sm bg-white">
+                    <div class="panel-title mb-1 text-center">پیشرفت دوره های آموزشی</div>
+                    <div class="panel-body">
+                        <div class="progress-bar-title text-right">اچ تی ام ال</div>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated mb-1"
+                                 style="width:70%"></div>
+                        </div>
+                        <div class="progress-bar-title text-right">سی اس اس</div>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated mb-1"
+                                 style="width:60%"></div>
+                        </div>
+                        <div class="progress-bar-title text-right">جاوا اسکریپت</div>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated mb-1"
+                                 style="width:90%"></div>
+                        </div>
+                        <div class="progress-bar-title text-right">جی کوئری</div>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated mb-1"
+                                 style="width:50%"></div>
+                        </div>
+                        <div class="progress-bar-title text-right">بوت استرپ</div>
+                        <div class="progress mb-2">
+                            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated mb-1"
+                                 style="width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="panel mt-1 rounded shadow-sm  bg-white">
+                    <div class="panel-title mb-1 text-center">نظرات دانشجویان</div>
+                    <div class="panel-body">
+                        <div id="comments-slider" class="carousel  slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner rounded">
+                                <div class="carousel-item active text-right">
+                                    <div class="panel-header rounded ">
+                                        <img class="rounded-circle" src="assets/images/kzp.jpg" width="54" height="54">
+                                        <span>دوره اسکریپت نویس PHP</span>
+                                    </div>
+                                    <p class="user-comment-details text-justify">
+                                      این دوره واقعا عالیهههههه
+                                    </p>
+                                </div>
+                                <div class="carousel-item text-right">
+                                    <div class="panel-header rounded">
+                                        <img class="rounded-circle" src="assets/images/kzp.jpg" width="54" height="54">
+                                        <span>دوره اسکریپت نویس PHP</span>
+                                    </div>
+                                    <p class="user-comment-details text-justify">
+                                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                                </div>
+                                <div class="carousel-item text-right">
+                                    <div class="panel-header rounded">
+                                        <img class="rounded-circle" src="assets/images/kzp.jpg" width="54" height="54">
+                                        <span>دوره اسکریپت نویس PHP</span>
+                                    </div>
+                                    <p class="user-comment-details text-justify">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="panel mt-1 rounded shadow-sm bg-white">
+                    <div class="panel-title mb-1 text-center">تماس با ما</div>
+                    <div class="panel-body">
+                        <form class="rtl">
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text custom-input-group-text">نــام</span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="نام خود را وارد نمایید...">
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text custom-input-group-text">ایمـیل</span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="ایمیل خود را وارد نمایید...">
+                            </div>
+                            <textarea type="text" class="form-control mb-2" placeholder="پیـــام شما ..."
+                                      cols="6" rows="4" style="max-height: 127px;min-height: 127px"></textarea>
+                            <input type="submit" class="btn btn-success btn-sm btn-block"
+                                   style="    margin-bottom: 3px;"
+                                   value="ارسال پیــام">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- footer section -->
+    <div class="container-fluid mt-1" style="width:100% !important">
+        <div class="row" style="background:#49484b">
+            <div class="col-12 col-sm-12 col-lg-4 ">
+                <div class="content custom-footer-content1 text-right">
+                    <div class="content-title p-4">خدمات مشتریان</div>
+                    <div class="content-body">
+                        <ul class=" text-white float-right p-0 ">
+                            <li class="p-2"><a href="#" class="">پاسخ به پرسش های متداول</a></li>
+                            <li class="p-2"><a href="#">شرایط استفاده</a></li>
+                            <li class="p-2"><a href="#">حریم خصوصی</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="content custom-footer-content1 text-right ">
+                    <div class="content-title p-4">ثبت نام در خبرنامه</div>
+                    <div class="content-body mr-2">
+                        <p class="text-white pt-2">با ثبت نام در خبرنامه ، اولین نفری باشید که از جدیدترین محصولات،
+                            جشنواره ها و فروش‌های ویژه ما مطلع می شوید</p>
+                        <form class="d-sm-flex" action="index.html" method="post">
+                            <input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید ...">
+                            <input type="button" class=" btn btn-success mr-2" value="ثبت نام">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="content custom-footer-content1 text-right">
+                    <div class="content-title p-4">اطالاعات</div>
+                    <div class="content-body text-white mr-2 p-2">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="">پشتیبانی :</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="">۳۳۳۳۳۳۳۳ (۰۱۱)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="">آدرس :</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="">XXXXXXXXXXX</p>
+                            </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-6 ">
+                            <p class="ml-4">مارا در شبکه های اجتماعی دنبال کنید :</p>
+                          </div>
+                          <div class="col-6">
+                            <div class="content text-center" style="margin-right: -93px !important;">
+                                <div class="social-icon" style="direction:ltr">
+                                    <a href="#"><span class="icon-facebook text-white" style="margin-left: 5px;"></span></a>
+                                    <a href="#"><span class="icon-youtube-play text-white" style="margin-left: 5px;"></span></a>
+                                    <a href="#"><span class="icon-telegram text-white" style="margin-left: 5px;"></span></a>
+                                    <a href="@slimodan"><span class="icon-instagram text-white" style="margin-left: 5px;"></span></a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+  function showPage(){
+     setTimeout(sh,3000)
+  }
+  function sh(){
+    document.getElementById('bg-loader').style.display="none";
+    document.getElementById('wrapper').style.display="block";
+  }
+</script>
+</body>
+</html>
